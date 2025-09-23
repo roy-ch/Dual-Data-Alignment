@@ -28,15 +28,15 @@ Jingyi Xie<sup>4</sup>, Xu Chen<sup>2</sup>, Lei Xu<sup>5</sup>, Isabel Guan<sup
 
 
 <div align="center">
-    <img src="asset/bias.png" />
+    <img src="assets/bias.png" />
 </div><br/>
 
 <div align="center">
-    <img src="asset/motivation.png" />
+    <img src="assets/motivation.png" />
 </div><br/>
 
 <div align="center">
-    <img src="asset/BenchmarkComparison.png" />
+    <img src="assets/BenchmarkComparison.png" />
 </div><br/>
 
 
