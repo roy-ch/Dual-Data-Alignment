@@ -1,5 +1,5 @@
 <div align="center">
-<h1>🎉🎉🎉 AIGI-Holmes (NeurIPS 2025 **Spotlight**)</h1>
+<h1>🎉🎉🎉 DDA (NeurIPS 2025 **Spotlight**)</h1>
 <h3>Dual Data Alignment Makes AI-Generated Image Detector Easier Generalizable</h3>
 
 Ruoxin Chen<sup>1*</sup>, Junwei Xi<sup>2</sup>, Zhiyuan Yan<sup>3</sup>, Keyue Zhang<sup>1</sup>, Shuang Wu<sup>1</sup>,  
