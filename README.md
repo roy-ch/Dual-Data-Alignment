@@ -54,7 +54,7 @@ Jingyi Xie<sup>4</sup>, Xu Chen<sup>2</sup>, Lei Xu<sup>5</sup>, Isabel Guan<sup
 - [ ] Release checkpoint and inference code
 - [ ] Release training set and training script
 - [ ] Release code for DDA data construction
-- [ ] Release code for DDA data construction
+- [ ] Release model and code for The 6th Face Anti-Spoofing Workshop
 
 
 ## ✍️ Citing
