@@ -27,17 +27,18 @@ Jingyi Xie<sup>4</sup>, Xu Chen<sup>2</sup>, Lei Xu<sup>5</sup>, Isabel Guan<sup
 > *Existing detectors are often trained on biased datasets, leading to the possibility of overfitting on non-causal image attributes that are spuriously correlated with real/synthetic labels. While these biased features enhance performance on the training data, they result in substantial performance degradation when applied to unbiased datasets. One common solution is to perform dataset alignment through generative reconstruction, matching the semantic content between real and synthetic images. However, we revisit this approach and show that pixel-level alignment alone is insufficient. The reconstructed images still suffer from frequency-level misalignment, which can perpetuate spurious correlations. To illustrate, we observe that reconstruction models tend to restore the high-frequency details lost in real images (possibly due to JPEG compression), inadvertently creating a frequency-level misalignment, where synthetic images appear to have richer high-frequency content than real ones. This misalignment leads to models associating high-frequency features with synthetic labels, further reinforcing biased cues. To resolve this, we propose Dual Data Alignment (DDA), which aligns both the pixel and frequency domains. Moreover, we introduce two new test sets: DDA-COCO, containing DDA-aligned synthetic images for testing detector performance on the most aligned dataset, and EvalGEN, featuring the latest generative models for assessing detectors under new generative architectures such as visual auto-regressive generators. Finally, our extensive evaluations demonstrate that a detector trained exclusively on DDA-aligned MSCOCO could improve across 8 diverse benchmarks by a non-trivial margin, showing a +7.2% on in-the-wild benchmarks, highlighting the improved generalizability of unbiased detectors.*
 
 
-<div align="center">
-    <img src="assets/bias.png" />
-</div><br/>
+<!-- 两图一行：bias 左边，benchmark 右边 -->
+<!-- <div style="display:flex; justify-content:space-between; align-items:center; margin:20px 0;">
+    <img src="assets/bias.png" style="max-width:48%; height:auto;" />
+    <img src="assets/BenchmarkComparison.png" style="max-width:48%; height:auto;" />
+</div> -->
 
-<div align="center">
-    <img src="assets/motivation.png" />
-</div><br/>
+<!-- motivation 居中 -->
+<div style="text-align:center; margin:20px 0;">
+    <img src="assets/motivation.png" style="max-width:60%; height:auto;" />
+</div>
 
-<div align="center">
-    <img src="assets/BenchmarkComparison.png" />
-</div><br/>
+
 
 
 ## 🎯 ToDo List <a name="todo"></a>
