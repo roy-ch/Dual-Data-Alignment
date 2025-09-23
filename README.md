@@ -1,5 +1,5 @@
 <div align="center">
-<h1>🎉🎉🎉 DDA (NeurIPS 2025 Spotlight)</h1>
+<h1> Dual Data Alignment (NeurIPS 2025 Spotlight)</h1>
 <h3>Dual Data Alignment Makes AI-Generated Image Detector Easier Generalizable</h3>
 
 Ruoxin Chen<sup>1*</sup>, Junwei Xi<sup>2</sup>, Zhiyuan Yan<sup>3</sup>, Keyue Zhang<sup>1</sup>, Shuang Wu<sup>1</sup>,  
@@ -18,6 +18,11 @@ Jingyi Xie<sup>4</sup>, Xu Chen<sup>2</sup>, Lei Xu<sup>5</sup>, Isabel Guan<sup
 [[GitHub](https://github.com/roy-ch/Dual-Data-Alignment)] [[Paper](https://arxiv.org/abs/2505.14359)] [[Dataset (Coming Soon)]()]
 
 </div>
+
+## 📣 News
+
+- `2025/09` : 🎉 Our paper is accepted by NeurIPS 2025 as **Spotlight**.
+- `2025/08` : 🏆 DDA wins **1st Prize** at the [The 6th Face Anti-Spoofing Workshop: Unified Physical-Digital Attacks Detection@ICCV2025](https://sites.google.com/view/face-anti-spoofing-challenge/welcome/challengeiccv2025) ! 🔥 Our model is exclusively trained on **DDA-aligned COCO, without any competition-provided face data**.
 
 ---
 
@@ -38,6 +43,8 @@ Jingyi Xie<sup>4</sup>, Xu Chen<sup>2</sup>, Lei Xu<sup>5</sup>, Isabel Guan<sup
     <img src="assets/motivation.png" style="max-width:60%; height:auto;" />
 </div>
 
+---
+
 
 
 
@@ -47,3 +54,16 @@ Jingyi Xie<sup>4</sup>, Xu Chen<sup>2</sup>, Lei Xu<sup>5</sup>, Isabel Guan<sup
 - [ ] Release checkpoint and inference code
 - [ ] Release training set and training script
 - [ ] Release code for DDA data construction
+- [ ] Release code for DDA data construction
+
+
+## ✍️ Citing
+If you find this repository useful for your work, please consider citing it as follows:
+```
+@inproceedings{chen2025dda,
+  title={Dual Data Alignment Makes AI-Generated Image Detector Easier Generalizable},
+  author={Chen, Ruoxin and Xi, Junwei and Yan, Zhiyuan and Zhang, Ke-Yue and Wu, Shuang and Xie, Jingyi and Chen, Xu and Xu, Lei and Guan, Isabel and Yao, Taiping and Ding, Shouhong},
+  booktitle={Advances in Neural Information Processing Systems},
+  year={2025}
+}
+```
