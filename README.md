@@ -22,7 +22,7 @@ Jingyi Xie<sup>4</sup>, Xu Chen<sup>2</sup>, Lei Xu<sup>5</sup>, Isabel Guan<sup
 ## 📣 News
 
 - `2025/09` : 🎉 Accepted by NeurIPS 2025 as **Spotlight**.
-- `2025/08` : 🏆 DDA wins **1st Prize** at the [The 6th Face Anti-Spoofing Workshop: Unified Physical-Digital Attacks Detection@ICCV2025](https://sites.google.com/view/face-anti-spoofing-challenge/welcome/challengeiccv2025) ! 🔥 Our model is exclusively trained on DDA-aligned COCO, without any competition-provided face data. **A model trained with no face data wins a face anti-spoofing competition**.
+<!-- - `2025/08` : 🏆 DDA wins **1st Prize** at the [The 6th Face Anti-Spoofing Workshop: Unified Physical-Digital Attacks Detection@ICCV2025](https://sites.google.com/view/face-anti-spoofing-challenge/welcome/challengeiccv2025) ! 🔥 Our model is exclusively trained on DDA-aligned COCO, without any competition-provided face data. **A model trained with no face data wins a face anti-spoofing competition**.-->
 ---
 
 
