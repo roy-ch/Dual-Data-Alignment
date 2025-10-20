@@ -59,7 +59,7 @@ Jingyi Xie<sup>4</sup>, Xu Chen<sup>2</sup>, Lei Xu<sup>5</sup>, Isabel Guan<sup
 ## 📨 Contact
 
 If you have any questions or suggestions, please feel free to contact us 
-at [cusmochen@tencent.com](cusmochen@tencent.com).
+at [cusmochen@tencent.com](cusmochen@tencent.com) or adding Wechat 18818203081.
 
 ## ✍️ Citing
 If you find this repository useful for your work, please consider citing it as follows:
