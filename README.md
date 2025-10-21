@@ -22,7 +22,9 @@ Jingyi Xie<sup>4</sup>, Xu Chen<sup>2</sup>, Lei Xu<sup>5</sup>, Isabel Guan<sup
 ## 📣 News
 
 - `2025/09` : 🎉 Accepted by NeurIPS 2025 as **Spotlight**.
-<!-- - `2025/08` : 🏆 DDA wins **1st Prize** at the [The 6th Face Anti-Spoofing Workshop: Unified Physical-Digital Attacks Detection@ICCV2025](https://sites.google.com/view/face-anti-spoofing-challenge/welcome/challengeiccv2025) ! 🔥 Our model is exclusively trained on DDA-aligned COCO, without any competition-provided face data. **A model trained with no face data wins a face anti-spoofing competition**.-->
+<!-- - `2025/08` : 🏆 DDA (Ke-Yue Zhang's team) wins **1st Prize** at the [The 6th Face Anti-Spoofing Workshop: Unified Physical-Digital Attacks Detection@ICCV2025]((https://sites.google.com/view/face-anti-spoofing-challenge/winners-results/challengeiccv2025)) ! Notably, 🔥 our winner model is exclusively trained on DDA-aligned COCO, without using any competition-provided face data. **A model trained with no face data wins a face anti-spoofing competition**.-->
+- `2025/10` : 🏆 **[ICCV 2025 FAS Challenge: 1st Prize](https://sites.google.com/view/face-anti-spoofing-challenge/winners-results/challengeiccv2025) (Ke-Yue Zhang’s team)**
+  * Winning model trained exclusively on **DDA-aligned COCO** (no face data). **A model with zero face data won a face anti-spoofing competition.**
 ---
 
 
@@ -53,7 +55,7 @@ Jingyi Xie<sup>4</sup>, Xu Chen<sup>2</sup>, Lei Xu<sup>5</sup>, Isabel Guan<sup
 - [ ] Release checkpoint and inference code
 - [ ] Release training set and training script
 - [ ] Release code for DDA data construction
-- [ ] Release model and code for The 6th Face Anti-Spoofing Workshop
+- [ ] Release model and code for ICCV 2025 FAS Challenge
 
 
 ## 📨 Contact
