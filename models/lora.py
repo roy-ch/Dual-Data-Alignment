@@ -16,10 +16,6 @@ class LoRALayer(nn.Module):
         nn.init.zeros_(self.lora_B)
         
     def forward(self, x):
-        """
-        优化计算：直接 x @ A.T 再乘 B.T，避免计算 W_LoRA = B @ A
-        """
-        # 执行低秩变换
         lora_out = torch.einsum('...d, rd -> ...r', x, self.lora_A)  # x @ A.T
         lora_out = torch.einsum('...r, or -> ...o', lora_out, self.lora_B)  # (x @ A.T) @ B.T
         
