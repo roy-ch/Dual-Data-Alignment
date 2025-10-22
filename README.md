@@ -45,7 +45,8 @@ Jingyi Xie<sup>4</sup>, Xu Chen<sup>2</sup>, Lei Xu<sup>5</sup>, Isabel Guan<sup
 </div>
 
 ---
-## Results of a single DDA model on 11 benchmarks (G refers to GAN, D to Diffusion, AR to Auto-Regressive models)
+## Results of a single DDA model on 11 benchmarks
+G refers to GAN, D to Diffusion, AR to Auto-Regressive models
 
 | Benchmark | NPR (CVPR'24) | UnivFD (CVPR'23) | FatFormer (CVPR'24) | SAFE (KDD'25) | C2P-CLIP (AAAI'25) | AIDE (ICLR'25) | DRCT (ICML'24) | AlignedForensics (ICLR'25) | DDA (ours) |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
