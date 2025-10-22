@@ -35,13 +35,13 @@ model.eval()
 
 # Define the image transformations
 test_transform = transforms.Compose([
-    transforms.CenterCrop(224),
+    transforms.CenterCrop(336),
     transforms.ToTensor(),
     transforms.Normalize(mean=[0.48145466, 0.4578275, 0.40821073], std=[0.26862954, 0.26130258, 0.27577711]),
 ])
 
 # Load the image using PIL
-image_path = "test_data/img03551.jpg"
+image_path = "test.jpg"
 image = Image.open(image_path).convert("RGB")
 input_image = test_transform(image).unsqueeze(0).to(device)
 with torch.no_grad(): 
