@@ -3,6 +3,7 @@ import torch
 import torch.nn as nn
 from torch.hub import load_state_dict_from_url
 from torchvision.transforms import Normalize
+import torch.hub
 
 from functools import partial
 try:
@@ -57,52 +58,9 @@ class DINOv2Model(nn.Module):
     def __init__(self, name, num_classes=1, local_files_only=False, model_dir=None, huggingface_path=None):
         super(DINOv2Model, self).__init__()
         
-        # Support for dinov2_vitl14_register
-        if name == "dinov2_vitl14_register":
-            # Use the same channel size as dinov2_vitl14
-            self.model_type = name
-        elif name not in CHANNELS:
-            raise ValueError(f"Unknown DINOv2 model: {name}. available models: {list(CHANNELS.keys()) + ['dinov2_vitl14_register']}")
-        
-        self.model_type = name
-        
-        
-        # Load from Hugging Face path if provided
-        if huggingface_path:
-            print(f"Loading DINOv2 from HuggingFace path: {huggingface_path}")
-            self._load_from_huggingface(huggingface_path, name)
-        # Load from local path if specified
-        elif local_files_only and model_dir:
-            model_path = os.path.join(model_dir, f"{name}_pretrain.pth")
-            if not os.path.exists(model_path):
-                raise ValueError(f"Local file does not exist: {model_path}")
-            
-            print(f"Loading DINOv2 from local file: {model_path}")
-            self._create_model()
-            self._load_local_weights(model_path)
-        # Try loading from torch hub
-        else:
-            try:
-                import torch.hub
-                print(f"Loading DINOv2 from hub: {name}")
-                self.model = torch.hub.load('facebookresearch/dinov2', name)
-            except Exception as e:
-                print(f"Cannot load DINOv2 from hub: {e}")
-                
-                # Fallback to URL weights
-                self._create_model()
-                self._load_url_weights(DINOV2_MODELS[name])
-        
-        # Set channels based on model type
-        if name == "dinov2_vitl14_register":
-            channels = CHANNELS["dinov2_vitl14"]  # Use same channels as dinov2_vitl14
-        else:
-            channels = CHANNELS[name]
-            
-        self.fc = nn.Linear(channels, num_classes)
-        self.mean = [0.485, 0.456, 0.406]
-        self.std = [0.229, 0.224, 0.225]
-        self.normalize = Normalize(mean=self.mean, std=self.std)
+        print(f"Loading DINOv2 from hub: {name}")
+        self.model = torch.hub.load('facebookresearch/dinov2', name)
+        self.fc = nn.Linear(CHANNELS[name], num_classes)
 
     def _create_model(self):
         if not HAS_OFFICIAL_DINOV2:
@@ -115,7 +73,7 @@ class DINOv2Model(nn.Module):
         if model_fn is None:
             raise ValueError(f"Unsupported model type: {self.model_type}")
         
-        self.model = model_fn(patch_size=14)
+        self.model = model_fn(patch_size=14, block_chunks=0, init_values=1e-5)
     
     def _load_local_weights(self, model_path):
         state_dict = torch.load(model_path, map_location='cpu')
