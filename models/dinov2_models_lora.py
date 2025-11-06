@@ -2,22 +2,16 @@ import torch.nn as nn
 from .dinov2_models import DINOv2Model
 
 class DINOv2ModelWithLoRA(nn.Module):
-    def __init__(self, name, num_classes=1, lora_rank=8, lora_alpha=1.0, lora_targets=None, 
-                 local_files_only=False, model_dir=None, huggingface_path=None):
+    def __init__(self, name, num_classes=1, lora_rank=8, lora_alpha=1.0, lora_targets=None):
         super(DINOv2ModelWithLoRA, self).__init__()
         
         # Create the base model with all parameters including the new ones
         self.base_model = DINOv2Model(
             name=name, 
-            num_classes=num_classes, 
-            local_files_only=local_files_only, 
-            model_dir=model_dir,
-            huggingface_path=huggingface_path
+            num_classes=num_classes,
         )
-        
-        # Store parameters for reference
+
         self.name = name
- 
         try:
             from .lora import apply_lora_to_linear_layers, get_lora_params
         except ImportError:
