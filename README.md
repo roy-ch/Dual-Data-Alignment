@@ -88,10 +88,11 @@ at [cusmochen@tencent.com](cusmochen@tencent.com) or add us on WeChat (ID: 18818
 ## ✍️ Citing
 If you find this repository useful for your work, please consider citing it as follows:
 ```
-@inproceedings{chen2025dda,
-  title={Dual Data Alignment Makes AI-Generated Image Detector Easier Generalizable},
-  author={Chen, Ruoxin and Xi, Junwei and Yan, Zhiyuan and Zhang, Ke-Yue and Wu, Shuang and Xie, Jingyi and Chen, Xu and Xu, Lei and Guan, Isabel and Yao, Taiping and Ding, Shouhong},
-  booktitle={Advances in Neural Information Processing Systems},
-  year={2025}
+@inproceedings{chen2025dual,
+  title={Dual Data Alignment Makes {AI}-Generated Image Detector Easier Generalizable},
+  author={Ruoxin Chen and Junwei Xi and Zhiyuan Yan and Ke-Yue Zhang and Shuang Wu and Jingyi Xie and Xu Chen and Lei Xu and Isabel Guan and Taiping Yao and Shouhong Ding},
+  booktitle={The Thirty-ninth Annual Conference on Neural Information Processing Systems},
+  year={2025},
+  url={https://openreview.net/forum?id=C39ShJwtD5}
 }
 ```
