@@ -76,6 +76,8 @@ The training dataset has been released on [modelscope](https://modelscope.cn/dat
 
 DDA-COCO Benchmark has been released on [modelscope](https://modelscope.cn/datasets/roych1997/DDA-COCO/files).
 
+EvalGEN Benchmark has been released on [modelscope](https://modelscope.cn/datasets/roych1997/EvalGEN/files).
+
 ---
 
 ## Checkpoints
