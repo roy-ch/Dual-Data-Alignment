@@ -19,6 +19,7 @@ Jingyi Xie<sup>4</sup>, Xu Chen<sup>2</sup>, Lei Xu<sup>5</sup>, Isabel Guan<sup
 [![BFree](https://img.shields.io/badge/Project%20page-222222.svg?style=for-the-badge&logo=github)](https://github.com/roy-ch/Dual-Data-Alignment)
 [![arXiv](https://img.shields.io/badge/-arXiv-B31B1B.svg?style=for-the-badge&logo=arXiv)](https://arxiv.org/abs/2505.14359)
 [![arXiv](https://img.shields.io/badge/-Checkpoint%20&%20Data-ffab03.svg?style=for-the-badge&logo=files&logoColor=ffffff)](https://modelscope.cn/datasets/roych1997/Dual_Data_Alignment)
+[![arXiv](https://img.shields.io/badge/-DDA--COCO%20Benchmark-ffab03.svg?style=for-the-badge&logo=files&logoColor=ffffff)](https://modelscope.cn/datasets/roych1997/DDA-COCO/files)
 
 </div>
 
@@ -72,6 +73,8 @@ JPEG compression with a quality factor of 96 is applied to the synthetic images 
 ## Training data
 
 The training dataset has been released on [modelscope](https://modelscope.cn/datasets/roych1997/Dual_Data_Alignment/files).
+
+DDA-COCO Benchmark has been released on [modelscope](https://modelscope.cn/datasets/roych1997/DDA-COCO/files).
 
 ---
 
