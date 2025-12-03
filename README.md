@@ -84,7 +84,7 @@ The checkpoint has been released on [modelscope](https://modelscope.cn/datasets/
 
 - [x] Release arxiv paper with complete BibTeX citation
 - [x] Release checkpoint and inference code
-- [ ] Release training set and training script
+- [x] Release training set and training script
 - [ ] Release code for DDA data construction
 - [ ] Release model and code for ICCV 2025 FAS Challenge
 
