@@ -8,7 +8,7 @@ set -euo pipefail
 # ========= User Configuration =========
 # TODO: Update these paths for your environment
 REAL_PATH="/path/to/real/images"
-FAKE_PATH="/path/to/fake/images"
+FAKE_PATH="/path/to/vae/images"
 QUALITY_JSON="./MSCOCO_train2017.json"
 CHECKPOINTS_DIR="./checkpoints"
 
