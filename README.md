@@ -74,16 +74,21 @@ JPEG compression with a quality factor of 96 is applied to the synthetic images 
 
 The training dataset has been released on [modelscope](https://modelscope.cn/datasets/roych1997/Dual_Data_Alignment/files).
 
-DDA-COCO Benchmark has been released on [modelscope](https://modelscope.cn/datasets/roych1997/DDA-COCO/files).
-
-EvalGEN Benchmark has been released on [modelscope](https://modelscope.cn/datasets/roych1997/EvalGEN/files).
-
 ---
 
 ## Checkpoints
 
 The checkpoint has been released on [modelscope](https://modelscope.cn/datasets/roych1997/Dual_Data_Alignment/files).
 
+---
+
+## Benchmarks
+
+DDA-COCO Benchmark has been released on [modelscope](https://modelscope.cn/datasets/roych1997/DDA-COCO/files).
+
+EvalGEN Benchmark has been released on [modelscope](https://modelscope.cn/datasets/roych1997/EvalGEN/files).
+
+---
 
 ## 🎯 ToDo List <a name="todo"></a>
 
