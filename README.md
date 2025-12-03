@@ -1,6 +1,6 @@
 <div align="center">
-<h1> Dual Data Alignment (NeurIPS 2025 Spotlight)</h1>
-<h3>Dual Data Alignment Makes AI-Generated Image Detector Easier Generalizable</h3>
+<h1> Dual Data Alignment</h1>
+<h3>Dual Data Alignment Makes AI-Generated Image Detector Easier Generalizable (NeurIPS 2025 Spotlight)</h3>
 
 Ruoxin Chen<sup>1</sup>, Junwei Xi<sup>2</sup>, Zhiyuan Yan<sup>3</sup>, Keyue Zhang<sup>1</sup>, Shuang Wu<sup>1</sup>,  
 Jingyi Xie<sup>4</sup>, Xu Chen<sup>2</sup>, Lei Xu<sup>5</sup>, Isabel Guan<sup>6†</sup>, Taiping Yao<sup>1†</sup>, Shouhong Ding<sup>1</sup>
@@ -15,7 +15,10 @@ Jingyi Xie<sup>4</sup>, Xu Chen<sup>2</sup>, Lei Xu<sup>5</sup>, Isabel Guan<sup
 <sup>6</sup>Hong Kong University of Science and Technology
 
 
-[[GitHub](https://github.com/roy-ch/Dual-Data-Alignment)] [[Paper](https://arxiv.org/abs/2505.14359)] [[Dataset (Coming Soon)]()]
+<!-- [[GitHub](https://github.com/roy-ch/Dual-Data-Alignment)] [[Paper](https://arxiv.org/abs/2505.14359)] [[Dataset (Coming Soon)]()] -->
+[![BFree](https://img.shields.io/badge/Project%20page-222222.svg?style=for-the-badge&logo=github)](https://github.com/roy-ch/Dual-Data-Alignment)
+[![arXiv](https://img.shields.io/badge/-arXiv-B31B1B.svg?style=for-the-badge&logo=arXiv)](https://arxiv.org/abs/2505.14359)
+[![arXiv](https://img.shields.io/badge/-Checkpoint%20&%20Data-ffab03.svg?style=for-the-badge&logo=files&logoColor=ffffff)](https://modelscope.cn/datasets/roych1997/Dual_Data_Alignment)
 
 </div>
 
