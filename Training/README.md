@@ -36,8 +36,8 @@ Modify the train.sh file to point to your dataset paths:
 
 ```bash
 # In train.sh
-REAL_PATH="/path/to/train2017/real_0"
-FAKE_PATH="/path/to/train2017/fake_1"
+REAL_PATH="/path/to/real/images"
+FAKE_PATH="/path/to/vae/images"
 QUALITY_JSON="./MSCOCO_train2017.json"
 ```
 
