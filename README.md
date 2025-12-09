@@ -99,9 +99,10 @@ If you have any questions or suggestions, please feel free to contact us
 at [cusmochen@tencent.com](cusmochen@tencent.com).
 
 Welcome to discuss with us if you have any questions
-<div style="text-align:center; margin:20px 0;">
-    <img src="assets/QRcode.png" style="max-width:60%; height:auto;" />
-</div>
+<p align="center">
+ <img src="assets/QRcode.jpg" width="200">
+</p>
+
 
 
 ## 😄 Acknowledgement
