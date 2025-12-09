@@ -69,7 +69,7 @@ The training dataset has been released on [ModelScope](https://www.modelscope.cn
 
 ## 📑 Checkpoints
 
-The checkpoint has been released on [modelscope](https://modelscope.cn/datasets/roych1997/Dual_Data_Alignment/files).
+The checkpoint has been released on [ModelScope](https://modelscope.cn/datasets/roych1997/Dual_Data_Alignment/files).
 
 ---
 
