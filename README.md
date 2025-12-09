@@ -31,25 +31,19 @@ Jingyi Xie<sup>4</sup>, Xu Chen<sup>2</sup>, Lei Xu<sup>5</sup>, Isabel Guan<sup
   * Winning model trained exclusively on **DDA-aligned COCO** (no face data). **A model with zero face data won a face anti-spoofing competition.**
 ---
 
-
-## 💡 Abstract
-
-> *The rapid increase in AI-generated images (AIGIs) underscores the need for detection methods. Existing detectors are often trained on biased datasets, leading to overfitting on spurious correlations between non-causal image attributes and real/synthetic labels. While these biased features enhance performance on the training data, they result in substantial performance degradation when tested on unbiased datasets. A common solution is to perform data alignment through generative reconstruction, matching the content between real and synthetic images. However, we find that pixel-level alignment alone is inadequate, as the reconstructed images still suffer from frequency-level misalignment, perpetuating spurious correlations. To illustrate, we observe that reconstruction models restore the high-frequency details lost in real images, inadvertently creating a frequency-level misalignment, where synthetic images appear to have richer high-frequency content than real ones. This misalignment leads to models associating high-frequency features with synthetic labels, further reinforcing biased cues. To resolve this, we propose Dual Data Alignment (DDA), which aligns both the pixel and frequency domains. DDA generates synthetic images that closely resemble real ones by fusing real and synthetic image pairs in both domains, enhancing the detector's ability to identify forgeries without relying on biased features. Moreover, we introduce two new test sets: DDA-COCO, containing DDA-aligned synthetic images, and EvalGEN, featuring the latest generative models. Our extensive evaluations demonstrate that a detector trained exclusively on DDA-aligned MSCOCO improves across diverse benchmarks.*
-
-
 <!-- 两图一行：bias 左边，benchmark 右边 -->
 <!-- <div style="display:flex; justify-content:space-between; align-items:center; margin:20px 0;">
     <img src="assets/bias.png" style="max-width:48%; height:auto;" />
     <img src="assets/BenchmarkComparison.png" style="max-width:48%; height:auto;" />
 </div> -->
 
-<!-- motivation 居中 -->
+## 🤖 Motivation
 <div style="text-align:center; margin:20px 0;">
     <img src="assets/motivation.png" style="max-width:60%; height:auto;" />
 </div>
 
 ---
-## Results of a single DDA model on 11 benchmarks
+## 📊 Evaluation on 11 benchmarks
 JPEG compression with a quality factor of 96 is applied to the synthetic images in GenImage, ForenSynths, and AIGCDetectionBenchmark to mitigate format bias. The number of generators used in each dataset is reported: G refers to GAN, D to Diffusion, and AR to Auto-Regressive models. Among the 11 benchmarks, Chameleon, Synthwildx, WildRF, and Bfree-Online are the 4 in-the-wild datasets. Notably, DDA is **the first detector** to achieve over 80% cross-data accuracy on Chameleon.
 
 | Benchmark | NPR (CVPR'24) | UnivFD (CVPR'23) | FatFormer (CVPR'24) | SAFE (KDD'25) | C2P-CLIP (AAAI'25) | AIDE (ICLR'25) | DRCT (ICML'24) | AlignedForensics (ICLR'25) | DDA (ours) |
@@ -70,19 +64,19 @@ JPEG compression with a quality factor of 96 is applied to the synthetic images 
 
 ---
 
-## Training data
+## 📦 Training data
 
 The training dataset has been released on [modelscope](https://modelscope.cn/datasets/roych1997/Dual_Data_Alignment/files).
 
 ---
 
-## Checkpoints
+## 📑 Checkpoints
 
 The checkpoint has been released on [modelscope](https://modelscope.cn/datasets/roych1997/Dual_Data_Alignment/files).
 
 ---
 
-## Benchmarks
+## ⭐ New Challenging Benchmarks
 
 DDA-COCO Benchmark has been released on [modelscope](https://modelscope.cn/datasets/roych1997/DDA-COCO/files).
 
@@ -102,11 +96,22 @@ EvalGEN Benchmark has been released on [modelscope](https://modelscope.cn/datase
 ## 📨 Contact
 
 If you have any questions or suggestions, please feel free to contact us 
-at [cusmochen@tencent.com](cusmochen@tencent.com) or add us on WeChat (ID: 18818203081).
+at [cusmochen@tencent.com](cusmochen@tencent.com).
+
+Welcome to discuss with us if you have any questions
+<div style="text-align:center; margin:20px 0;">
+    <img src="assets/QRcode.png" style="max-width:60%; height:auto;" />
+</div>
+
+
+## 😄 Acknowledgement
+
+Part of this codebase is adapted from [UniversalFakeDetect](https://github.com/WisconsinAIVision/UniversalFakeDetect). Huge thanks to the original authors for sharing their excellent work!
+
 
 ## ✍️ Citing
 If you find this repository useful for your work, please consider citing it as follows:
-```
+```shell
 @inproceedings{chen2025dual,
   title={Dual Data Alignment Makes {AI}-Generated Image Detector Easier Generalizable},
   author={Ruoxin Chen and Junwei Xi and Zhiyuan Yan and Ke-Yue Zhang and Shuang Wu and Jingyi Xie and Xu Chen and Lei Xu and Isabel Guan and Taiping Yao and Shouhong Ding},
