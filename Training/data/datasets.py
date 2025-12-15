@@ -107,22 +107,13 @@ class RealFakeDataset(Dataset):
         stat_from = "clip"
         print(f"Mean and std stats are from: {stat_from}")
 
-        transform_list_png = create_train_transforms(
+        transform_list = create_train_transforms(
             size=opt.cropSize,
             mean=MEAN[stat_from],
             std=STD[stat_from],
             is_crop=True,
         )
-        self.transform_png = ComposedTransforms(transform_list_png)
-
-        transform_list_jpeg = create_train_transforms(
-            size=opt.cropSize,
-            mean=MEAN[stat_from],
-            std=STD[stat_from],
-            is_crop=True,
-        )
-        self.transform_jpeg = ComposedTransforms(transform_list_jpeg)
-
+        self.transform = ComposedTransforms(transform_list)
         self.p_freqmix = self.opt.p_freqmix
 
     def _load_dataset(self, real_image_dir, vae_models, source_name):
@@ -264,12 +255,7 @@ class RealFakeDataset(Dataset):
             img_dict["real_resized"].append(real_resized)
             img_dict["fake_resized"].append(fake_resized)
 
-        transformed_dict = (
-            self.transform_jpeg(img_dict)
-            if actual_format == "jpeg"
-            else self.transform_png(img_dict)
-        )
-
+        transformed_dict = self.transform(img_dict)
         transformed_dict["source"] = sample["source"]
 
         return transformed_dict
