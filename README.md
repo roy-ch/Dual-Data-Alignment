@@ -86,7 +86,7 @@ EvalGEN Benchmark has been released on [ModelScope](https://www.modelscope.cn/da
 - [x] Release arxiv paper with complete BibTeX citation
 - [x] Release checkpoint and inference code
 - [x] Release training set and training script
-- [ ] Release code for DDA data construction
+- [x] Release code for DDA data construction
 - [ ] Release model and code for ICCV 2025 FAS Challenge
 
 
