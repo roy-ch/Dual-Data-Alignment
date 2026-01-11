@@ -95,7 +95,7 @@ EvalGEN Benchmark has been released on [ModelScope](https://www.modelscope.cn/da
 If you have any questions or suggestions, please feel free to contact us 
 at [cusmochen@tencent.com](cusmochen@tencent.com).
 
-Welcome to discuss with us if you have any questions
+Feel free to reach out if you have any questions. This WeChat group brings together researchers working on AI-generated image detection, including authors of Effort (ICML 2025 Oral), DRCT (ICML 2024 Spotlight), and related work. Our goal is to build a focused community where researchers can exchange ideas and inspire new directions in AIGI detection.
 <p align="center">
  <img src="assets/QRcode.jpg" width="200">
 </p>
