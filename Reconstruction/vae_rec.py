@@ -56,7 +56,7 @@ class VAERebilder:
             new_height = (height // 8) * 8
 
             if new_width != width or new_height != height:
-                left = (width - new_height) // 2
+                left = (width - new_width) // 2
                 top = (height - new_height) // 2
                 right = left + new_width
                 bottom = top + new_height
