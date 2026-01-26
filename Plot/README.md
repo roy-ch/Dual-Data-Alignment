@@ -1,4 +1,4 @@
-# Polar Grouped Bar Plot (Radar-like)
+# Polar Grouped Bar Plot
 
 A script to draw a **polar grouped bar chart** (visually similar to a radar chart),
 which is useful for comparing multiple methods across multiple benchmarks / datasets.
