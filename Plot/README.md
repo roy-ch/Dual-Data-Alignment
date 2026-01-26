@@ -22,7 +22,7 @@ python plot.py
 This will generate an image in the current directory
 
 <div style="text-align:center; margin:20px 0;">
-    <img src="bfs_coco_benchmark_comparison_offset30.png" style="max-width:60%; height:auto;" />
+    <img src="bfs_coco_benchmark_comparison_offset30.png" style="max-width:40%; height:auto;" />
 </div>
 
 ---
