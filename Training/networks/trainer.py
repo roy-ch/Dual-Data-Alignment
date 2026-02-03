@@ -124,14 +124,14 @@ class Trainer(BaseModel):
 
         cls_loss = self.loss_fn(self.output.squeeze(1), self.label)
 
-        total_loss = cls_loss
-
         contrastive_loss = self.contrastive_loss_fn(self.feature, self.label)
-        total_loss = 0.5 * total_loss + 0.5 * contrastive_loss
+        
+        total_loss = 0.5 * cls_loss + 0.5 * contrastive_loss
 
         self.loss = total_loss
 
         self.loss = self.loss / self.accumulation_steps
+        
         self.loss.backward()
 
         if self.current_step % self.accumulation_steps == 0:
