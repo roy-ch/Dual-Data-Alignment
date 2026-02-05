@@ -61,6 +61,29 @@ JPEG compression with a quality factor of 96 is applied to the synthetic images 
 
 ---
 
+## 📊 Evaluation Benchmarks
+
+All evaluation benchmarks used in our experiments are obtained from publicly available sources.  
+We sincerely thank the original authors for providing these valuable AIGI detection datasets.
+
+| Benchmark | Paper | Download |
+|---|---|---|
+| GenImage | GenImage: A Million-Scale Benchmark for Detecting AI-Generated Image | [Google Drive](https://drive.google.com/drive/folders/1jGt10bwTbhEZuGXLyvrCuxOI0cBqQ1FS) |
+| DRCT-2M | DRCT: Diffusion Reconstruction Contrastive Training towards Universe Detection of Diffusion Generated Images | [ModelScope](https://modelscope.cn/datasets/BokingChen/DRCT-2M/files) |
+| Synthbuster | Synthbuster: Towards Detection of Diffusion Model Generated Images | [Official Page](https://www.veraai.eu/posts/dataset-synthbuster-towards-detection-of-diffusion-model-generated-images) |
+| ForenSynths | CNN-generated images are surprisingly easy to spot... for now | [Google Drive](https://drive.google.com/drive/u/0/folders/14E_R19lqIE9JgotGz09fLPQ4NVqlYbVc) · [CMU Box](https://cmu.app.box.com/s/4syr4womrggfin0tsfhxohaec5dh6n48) |
+| AIGCDetectionBenchmark | A Comprehensive Benchmark for AI-generated Image Detection | [ModelScope](https://modelscope.cn/datasets/aemilia/AIGCDetectionBenchmark/files) |
+| Chameleon | A Sanity Check for AI-generated Image Detection | Contact: [tattoo.ysl@gmail.com](mailto:tattoo.ysl@gmail.com) |
+| SynthwildX | Raising the Bar of AI-generated Image Detection with CLIP | [GitHub](https://github.com/grip-unina/ClipBased-SyntheticImageDetection/tree/main/data/synthwildx) |
+| WildRF | Real-Time Deepfake Detection in the Real-World | [Google Drive](https://drive.google.com/file/d/1A0xoL44Yg68ixd-FuIJn2VC4vdZ6M2gn/view) |
+| Bfree-Online | A Bias-Free Training Paradigm for More General AI-generated Image Detection | [Official Download](https://www.grip.unina.it/download/prog/B-Free/training_data/) |
+| DDA-COCO | Dual Data Alignment Makes AI-Generated Image Detector Easier Generalizable | [ModelScope](https://www.modelscope.cn/datasets/JunweiXi/DDA-Training-Set) |
+| EvalGEN | Dual Data Alignment Makes AI-Generated Image Detector Easier Generalizable | [HuggingFace](https://huggingface.co/datasets/Junwei-Xi/EvalGEN) |
+
+
+
+---
+
 ## 📦 Training data
 
 The training dataset has been released on [ModelScope](https://www.modelscope.cn/datasets/JunweiXi/DDA-Training-Set) and [HuggingFace](https://huggingface.co/datasets/Junwei-Xi/DDA-Training-Set).
@@ -87,7 +110,6 @@ EvalGEN Benchmark has been released on [ModelScope](https://www.modelscope.cn/da
 - [x] Release checkpoint and inference code
 - [x] Release training set and training script
 - [x] Release code for DDA data construction
-- [ ] Release model and code for ICCV 2025 FAS Challenge
 
 
 ## 📨 Contact
