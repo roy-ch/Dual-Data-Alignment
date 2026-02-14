@@ -23,6 +23,7 @@ Jingyi Xie<sup>4</sup>, Xu Chen<sup>2</sup>, Lei Xu<sup>5</sup>, Isabel Guan<sup
 ## 📣 News
 
 - `2025/09` : 🎉 Accepted by NeurIPS 2025 as **Spotlight**.
+- `2026/02` : Official checkpoint released. We apologize for the previously uploaded checkpoint, whose performance slightly differed from the results reported in the paper.
 <!-- - `2025/08` : 🏆 DDA (Ke-Yue Zhang's team) wins **1st Prize** at the [The 6th Face Anti-Spoofing Workshop: Unified Physical-Digital Attacks Detection@ICCV2025]((https://sites.google.com/view/face-anti-spoofing-challenge/winners-results/challengeiccv2025)) ! Notably, 🔥 our winner model is exclusively trained on DDA-aligned COCO, without using any competition-provided face data. **A model trained with no face data wins a face anti-spoofing competition**.-->
 <!-- - - `2025/10` : 🏆 **[ICCV 2025 FAS Challenge: 1st Prize](https://sites.google.com/view/face-anti-spoofing-challenge/winners-results/challengeiccv2025) (Ke-Yue Zhang’s team)**-->
 
@@ -92,7 +93,8 @@ The training dataset has been released on [ModelScope](https://www.modelscope.cn
 
 ## 📑 Checkpoints
 
-The checkpoint has been released on [ModelScope](https://modelscope.cn/datasets/roych1997/Dual_Data_Alignment/files) and [HuggingFace](https://huggingface.co/Junwei-Xi/Dual-Data-Alignment).
+* **Old ModelScope (legacy)**: [ModelScope](https://www.modelscope.cn/models/JunweiXi/Dual-Data-Alignment/files) *(deprecated / kept for reference)*
+* **New release**: [ModelScope](https://huggingface.co/Junwei-Xi/Dual-Data-Alignment)
 
 ---
 
