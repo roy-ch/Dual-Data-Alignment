@@ -93,8 +93,8 @@ The training dataset has been released on [ModelScope](https://www.modelscope.cn
 
 ## 📑 Checkpoints
 
-* **Old ModelScope (legacy)**: [ModelScope](https://www.modelscope.cn/models/JunweiXi/Dual-Data-Alignment/files) *(deprecated / kept for reference)*
 * **New release**: [ModelScope](https://huggingface.co/Junwei-Xi/Dual-Data-Alignment)
+* **Old ModelScope (legacy)**: [ModelScope](https://www.modelscope.cn/datasets/roych1997/Dual_Data_Alignment/files) *(deprecated / kept for reference)*
 
 ---
 
