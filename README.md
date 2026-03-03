@@ -114,6 +114,18 @@ EvalGEN Benchmark has been released on [ModelScope](https://www.modelscope.cn/da
 - [x] Release code for DDA data construction
 
 
+---
+
+## 🔁 Reproduction
+
+We sincerely thank [@liyih](https://github.com/liyih) for independently retraining the model using the official DDA training code and achieving improved performance compared to the results reported in the paper (see [Issue #10](https://github.com/roy-ch/Dual-Data-Alignment/issues/10)). This validates the reproducibility of our implementation.
+
+The reproduced checkpoint is available at:
+https://www.modelscope.cn/models/yihengli/DDA_reproduce
+
+
+---
+
 ## 📨 Contact
 
 If you have any questions or suggestions, please feel free to contact us 
