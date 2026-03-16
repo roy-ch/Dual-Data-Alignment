@@ -22,10 +22,13 @@ Jingyi Xie<sup>4</sup>, Xu Chen<sup>2</sup>, Lei Xu<sup>5</sup>, Isabel Guan<sup
 
 ## 📣 News
 
+
 - `2025/09` : 🎉 Accepted by NeurIPS 2025 as **Spotlight**.
 - `2026/02` : Official checkpoint released. We apologize for the previously uploaded checkpoint, whose performance slightly differed from the results reported in the paper.
 <!-- - `2025/08` : 🏆 DDA (Ke-Yue Zhang's team) wins **1st Prize** at the [The 6th Face Anti-Spoofing Workshop: Unified Physical-Digital Attacks Detection@ICCV2025]((https://sites.google.com/view/face-anti-spoofing-challenge/winners-results/challengeiccv2025)) ! Notably, 🔥 our winner model is exclusively trained on DDA-aligned COCO, without using any competition-provided face data. **A model trained with no face data wins a face anti-spoofing competition**.-->
 <!-- - - `2025/10` : 🏆 **[ICCV 2025 FAS Challenge: 1st Prize](https://sites.google.com/view/face-anti-spoofing-challenge/winners-results/challengeiccv2025) (Ke-Yue Zhang’s team)**-->
+- `2026/03` : Access information for 14 evaluation benchmarks has been released. We strongly recommend that future work in AIGI detection report results on all 14 benchmarks to better demonstrate overall performance and mitigate benchmark-specific bias.
+
 
 ---
 
@@ -64,24 +67,26 @@ JPEG compression with a quality factor of 96 is applied to the synthetic images 
 
 ## 📊 Evaluation Benchmarks
 
-All evaluation benchmarks used in our experiments are obtained from publicly available sources.  
-We sincerely thank the original authors for providing these valuable AIGI detection datasets.
+All evaluation benchmarks used in our experiments are collected from publicly available sources.  
+We sincerely thank the original authors for making these valuable AIGI detection datasets publicly accessible.  
+*Benchmarks marked with `*` are planned for future evaluation.*
 
 | Benchmark | Paper | Download |
 |---|---|---|
-| GenImage | GenImage: A Million-Scale Benchmark for Detecting AI-Generated Image | [Google Drive](https://drive.google.com/drive/folders/1jGt10bwTbhEZuGXLyvrCuxOI0cBqQ1FS) |
-| DRCT-2M | DRCT: Diffusion Reconstruction Contrastive Training towards Universe Detection of Diffusion Generated Images | [ModelScope](https://modelscope.cn/datasets/BokingChen/DRCT-2M/files) |
-| Synthbuster | Synthbuster: Towards Detection of Diffusion Model Generated Images | [Official Page](https://www.veraai.eu/posts/dataset-synthbuster-towards-detection-of-diffusion-model-generated-images) |
-| ForenSynths | CNN-generated images are surprisingly easy to spot... for now | [Google Drive](https://drive.google.com/drive/u/0/folders/14E_R19lqIE9JgotGz09fLPQ4NVqlYbVc) · [CMU Box](https://cmu.app.box.com/s/4syr4womrggfin0tsfhxohaec5dh6n48) |
-| AIGCDetectionBenchmark | A Comprehensive Benchmark for AI-generated Image Detection | [ModelScope](https://modelscope.cn/datasets/aemilia/AIGCDetectionBenchmark/files) |
-| Chameleon | A Sanity Check for AI-generated Image Detection | Contact: [tattoo.ysl@gmail.com](mailto:tattoo.ysl@gmail.com) |
-| SynthwildX | Raising the Bar of AI-generated Image Detection with CLIP | [GitHub](https://github.com/grip-unina/ClipBased-SyntheticImageDetection/tree/main/data/synthwildx) |
-| WildRF | Real-Time Deepfake Detection in the Real-World | [Google Drive](https://drive.google.com/file/d/1A0xoL44Yg68ixd-FuIJn2VC4vdZ6M2gn/view) |
-| Bfree-Online | A Bias-Free Training Paradigm for More General AI-generated Image Detection | [Official Download](https://www.grip.unina.it/download/prog/B-Free/training_data/) |
-| DDA-COCO | Dual Data Alignment Makes AI-Generated Image Detector Easier Generalizable | [ModelScope](https://www.modelscope.cn/datasets/JunweiXi/DDA-Training-Set) |
-| EvalGEN | Dual Data Alignment Makes AI-Generated Image Detector Easier Generalizable | [HuggingFace](https://huggingface.co/datasets/Junwei-Xi/EvalGEN) |
-
-
+| GenImage | *GenImage: A Million-Scale Benchmark for Detecting AI-Generated Images* | [Google Drive](https://drive.google.com/drive/folders/1jGt10bwTbhEZuGXLyvrCuxOI0cBqQ1FS) |
+| DRCT-2M | *DRCT: Diffusion Reconstruction Contrastive Training towards Universe Detection of Diffusion Generated Images* | [ModelScope](https://modelscope.cn/datasets/BokingChen/DRCT-2M/files) |
+| Synthbuster | *Synthbuster: Towards Detection of Diffusion Model Generated Images* | [Official Page](https://www.veraai.eu/posts/dataset-synthbuster-towards-detection-of-diffusion-model-generated-images) |
+| ForenSynths | *CNN-generated images are surprisingly easy to spot... for now* | [Google Drive](https://drive.google.com/drive/u/0/folders/14E_R19lqIE9JgotGz09fLPQ4NVqlYbVc) · [CMU Box](https://cmu.app.box.com/s/4syr4womrggfin0tsfhxohaec5dh6n48) |
+| AIGCDetectionBenchmark | *A Comprehensive Benchmark for AI-generated Image Detection* | [ModelScope](https://modelscope.cn/datasets/aemilia/AIGCDetectionBenchmark/files) |
+| Chameleon | *A Sanity Check for AI-generated Image Detection* | Contact: [tattoo.ysl@gmail.com](mailto:tattoo.ysl@gmail.com) |
+| SynthwildX | *Raising the Bar of AI-generated Image Detection with CLIP* | [GitHub](https://github.com/grip-unina/ClipBased-SyntheticImageDetection/tree/main/data/synthwildx) |
+| WildRF | *Real-Time Deepfake Detection in the Real-World* | [Google Drive](https://drive.google.com/file/d/1A0xoL44Yg68ixd-FuIJn2VC4vdZ6M2gn/view) |
+| Bfree-Online | *A Bias-Free Training Paradigm for More General AI-generated Image Detection* | [Official Download](https://www.grip.unina.it/download/prog/B-Free/training_data/) |
+| DDA-COCO | *Dual Data Alignment Makes AI-Generated Image Detector Easier to Generalize* | [ModelScope](https://www.modelscope.cn/datasets/JunweiXi/DDA-Training-Set) |
+| EvalGEN | *Dual Data Alignment Makes AI-Generated Image Detector Easier to Generalize* | [Hugging Face](https://huggingface.co/datasets/Junwei-Xi/EvalGEN) |
+| MNW* | *Introducing the MNW Benchmark for AI Forensics* | [GitHub](https://github.com/microsoft/MNW/tree/main) |
+| AIGI-Now* | *Task-Model Alignment: A Simple Path to Generalizable AI-Generated Image Detection* | [Hugging Face](https://huggingface.co/datasets/Gaffeyzz/AIGI-Now) |
+| T2I-CoReBench-Images* | *Easier Painting Than Thinking: Can Text-to-Image Models Set the Stage, but Not Direct the Play?* | [Hugging Face](https://huggingface.co/datasets/lioooox/T2I-CoReBench-Images) |
 
 ---
 
