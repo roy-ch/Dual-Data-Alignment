@@ -25,8 +25,6 @@ Jingyi Xie<sup>4</sup>, Xu Chen<sup>2</sup>, Lei Xu<sup>5</sup>, Isabel Guan<sup
 
 - `2025/09` : 🎉 Accepted by NeurIPS 2025 as **Spotlight**.
 - `2026/02` : Official checkpoint released. We apologize for the previously uploaded checkpoint, whose performance slightly differed from the results reported in the paper.
-<!-- - `2025/08` : 🏆 DDA (Ke-Yue Zhang's team) wins **1st Prize** at the [The 6th Face Anti-Spoofing Workshop: Unified Physical-Digital Attacks Detection@ICCV2025]((https://sites.google.com/view/face-anti-spoofing-challenge/winners-results/challengeiccv2025)) ! Notably, 🔥 our winner model is exclusively trained on DDA-aligned COCO, without using any competition-provided face data. **A model trained with no face data wins a face anti-spoofing competition**.-->
-<!-- - - `2025/10` : 🏆 **[ICCV 2025 FAS Challenge: 1st Prize](https://sites.google.com/view/face-anti-spoofing-challenge/winners-results/challengeiccv2025) (Ke-Yue Zhang’s team)**-->
 - `2026/03` : Access information for 14 evaluation benchmarks has been released. We strongly recommend that future work in AIGI detection report results on all 14 benchmarks to better demonstrate overall performance and mitigate benchmark-specific bias.
 
 
