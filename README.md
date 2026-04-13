@@ -74,6 +74,7 @@ We sincerely thank the original authors for making these valuable AIGI detection
 | GenImage | *GenImage: A Million-Scale Benchmark for Detecting AI-Generated Images* | [Google Drive](https://drive.google.com/drive/folders/1jGt10bwTbhEZuGXLyvrCuxOI0cBqQ1FS) |
 | DRCT-2M | *DRCT: Diffusion Reconstruction Contrastive Training towards Universe Detection of Diffusion Generated Images* | [ModelScope](https://modelscope.cn/datasets/BokingChen/DRCT-2M/files) |
 | Synthbuster | *Synthbuster: Towards Detection of Diffusion Model Generated Images* | [Official Page](https://www.veraai.eu/posts/dataset-synthbuster-towards-detection-of-diffusion-model-generated-images) |
+| RAISE-1k (real subset used in Synthbuster) | Following the data source provided in *[ClipBased-SyntheticImageDetection](https://github.com/grip-unina/ClipBased-SyntheticImageDetection.git)* | [Official Download](https://www.grip.unina.it/download/prog/DMimageDetection/real_RAISE_1k.zip) |
 | ForenSynths | *CNN-generated images are surprisingly easy to spot... for now* | [Google Drive](https://drive.google.com/drive/u/0/folders/14E_R19lqIE9JgotGz09fLPQ4NVqlYbVc) · [CMU Box](https://cmu.app.box.com/s/4syr4womrggfin0tsfhxohaec5dh6n48) |
 | AIGCDetectionBenchmark | *A Comprehensive Benchmark for AI-generated Image Detection* | [ModelScope](https://modelscope.cn/datasets/aemilia/AIGCDetectionBenchmark/files) |
 | Chameleon | *A Sanity Check for AI-generated Image Detection* | Contact: [tattoo.ysl@gmail.com](mailto:tattoo.ysl@gmail.com) |
