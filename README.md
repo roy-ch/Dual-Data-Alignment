@@ -42,6 +42,27 @@ Jingyi Xie<sup>4</sup>, Xu Chen<sup>2</sup>, Lei Xu<sup>5</sup>, Isabel Guan<sup
 </div>
 
 ---
+
+## Online JPEG Compression for DDA Frequency Alignment
+
+In our DDA training pipeline, VAE-reconstructed fake images are compressed online using the same JPEG quality factor estimated from their paired real images. This step is critical for frequency-domain alignment between real and fake samples.
+
+Specifically, our implementation applies online JPEG compression to VAE-reconstructed images with the same JPEG quality factor as their corresponding real images, with a probability of 0.5. We empirically find that applying this operation with a probability of 0.5 works better than always applying it with a probability of 1.0.
+
+This design helps prevent the detector from exploiting compression-format bias between real images and VAE-reconstructed fake images, forcing the model to focus more on genuine VAE reconstruction artifacts rather than trivial JPEG-frequency differences.
+
+See `Training/data/datasets.py`, Lines 218–220:
+
+```python
+if random.random() < 0.5:
+    jpeg_quality_factor = int(sample["jpeg_quality"])
+    fake_img = JPEG_Compression(fake_img, jpeg_quality_factor)
+```
+
+---
+
+Therefore, matched online JPEG compression should be regarded as an essential component of DDA rather than a generic data augmentation. Without this alignment step, the real/fake frequency distributions remain biased, and the full performance and generalization ability of DDA cannot be properly achieved.
+
 ## 📊 Evaluation on 11 benchmarks
 JPEG compression with a quality factor of 96 is applied to the synthetic images in GenImage, ForenSynths, and AIGCDetectionBenchmark to mitigate format bias. The number of generators used in each dataset is reported: G refers to GAN, D to Diffusion, and AR to Auto-Regressive models. Among the 11 benchmarks, Chameleon, Synthwildx, WildRF, and Bfree-Online are the 4 in-the-wild datasets. Notably, DDA is **the first detector** to achieve over 80% cross-data accuracy on Chameleon.
 
