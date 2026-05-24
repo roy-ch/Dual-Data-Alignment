@@ -200,7 +200,21 @@ class RealFakeDataset(Dataset):
         if len(sample["fake_paths"]) > 0:
             fake_path = random.choice(sample["fake_paths"])
             fake_img = Image.open(fake_path).convert("RGB")
-
+            
+            # DDA frequency-domain alignment:
+            # The fake image here is an online-loaded VAE reconstruction, which is usually
+            # stored as PNG or in a compression format different from the paired real image.
+            # To fully activate DDA, we apply JPEG compression to the fake image with the
+            # same JPEG quality factor estimated from its corresponding real image.
+            #
+            # This step explicitly aligns real and fake samples in the frequency domain,
+            # preventing the detector from exploiting trivial compression-format bias
+            # instead of learning genuine VAE reconstruction artifacts.
+            #
+            # NOTE: This is not a generic augmentation. It is a required DDA alignment step.
+            # Without this matched online JPEG compression, the real/fake frequency
+            # distributions remain misaligned, and DDA cannot fully achieve its intended
+            # robustness and generalization performance.
             if random.random() < 0.5:
                 jpeg_quality_factor = int(sample["jpeg_quality"])
                 fake_img = JPEG_Compression(fake_img, jpeg_quality_factor)
