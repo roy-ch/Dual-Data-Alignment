@@ -139,10 +139,9 @@ EvalGEN Benchmark has been released on [ModelScope](https://www.modelscope.cn/da
 
 ## 🔁 Reproduction
 
-We sincerely thank [@liyih](https://github.com/liyih) for independently retraining the model using the official DDA training code and achieving improved performance compared to the results reported in the paper (see [Issue #10](https://github.com/roy-ch/Dual-Data-Alignment/issues/10)). This validates the reproducibility of our implementation.
+**JPEG decoding and reproducibility.** If you cannot reproduce our results, try different Pillow/libjpeg-turbo versions, as JPEG decoding can affect evaluation results. Thanks to [@wj-sim](https://github.com/wj-sim) for identifying this issue and reproducing our EvalGEN results with **Pillow 12.3.0 + libjpeg-turbo 3.1.4.1** ([Issue #15](https://github.com/roy-ch/Dual-Data-Alignment/issues/15)).
 
-The reproduced checkpoint is available at:
-https://www.modelscope.cn/models/yihengli/DDA_reproduce
+We sincerely thank [@liyih](https://github.com/liyih) for independently retraining the model using the official DDA training code and achieving improved performance compared to the results reported in the paper (see [Issue #10](https://github.com/roy-ch/Dual-Data-Alignment/issues/10)). This validates the reproducibility of our implementation. The reproduced checkpoint is available at: https://www.modelscope.cn/models/yihengli/DDA_reproduce
 
 
 ---
