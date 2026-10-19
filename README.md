@@ -78,6 +78,11 @@ JPEG compression with a quality factor of 96 is applied to the synthetic images 
 | **Avg ACC** | 46.1 ± 16.1 | 56.3 ± 16.5 | 59.6 ± 14.6 | 47.6 ± 16.0 | 62.1 ± 15.6 | 54.1 ± 12.8 | 70.1 ± 14.6 | 75.0 ± 11.1 | **90.7 ± 5.3** |
 | **Min ACC** | 2.9 | 15.4 | 45.6 | 1.1 | 38.9 | 19.1 | 50.6 | 53.9 | **81.4** |
 
+
+> [!IMPORTANT]
+> **Evaluation results are sensitive to the JPEG decoding environment.** Different `libjpeg-turbo` versions may produce different RGB values when decoding the same JPEG images and consequently affect the evaluation results. To reproduce the reported results, please use **Pillow 12.3.0 with libjpeg-turbo 3.1.4.1**. We thank @wj-sim for identifying and reporting this issue ([Issue #15](https://github.com/roy-ch/Dual-Data-Alignment/issues/15)).
+
+
 ---
 
 ## 📊 Evaluation Benchmarks
@@ -138,8 +143,6 @@ EvalGEN Benchmark has been released on [ModelScope](https://www.modelscope.cn/da
 ---
 
 ## 🔁 Reproduction
-
-**JPEG decoding and reproducibility.** If you cannot reproduce our results, try different Pillow/libjpeg-turbo versions, as JPEG decoding can affect evaluation results. Thanks to [@wj-sim](https://github.com/wj-sim) for identifying this issue and reproducing our EvalGEN results with **Pillow 12.3.0 + libjpeg-turbo 3.1.4.1** ([Issue #15](https://github.com/roy-ch/Dual-Data-Alignment/issues/15)).
 
 We sincerely thank [@liyih](https://github.com/liyih) for independently retraining the model using the official DDA training code and achieving improved performance compared to the results reported in the paper (see [Issue #10](https://github.com/roy-ch/Dual-Data-Alignment/issues/10)). This validates the reproducibility of our implementation. The reproduced checkpoint is available at: https://www.modelscope.cn/models/yihengli/DDA_reproduce
 
